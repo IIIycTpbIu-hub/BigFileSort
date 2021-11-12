@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigFileSort", "BigFileSort\BigFileSort.csproj", "{12999273-1A55-4162-A4EB-7668EF052216}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigFileSort.Tests", "BigFileSort.Tests\BigFileSort.Tests.csproj", "{58DE6A18-706F-48B4-BBD7-B07D8B0507DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12999273-1A55-4162-A4EB-7668EF052216}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12999273-1A55-4162-A4EB-7668EF052216}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12999273-1A55-4162-A4EB-7668EF052216}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12999273-1A55-4162-A4EB-7668EF052216}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58DE6A18-706F-48B4-BBD7-B07D8B0507DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58DE6A18-706F-48B4-BBD7-B07D8B0507DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58DE6A18-706F-48B4-BBD7-B07D8B0507DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58DE6A18-706F-48B4-BBD7-B07D8B0507DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
