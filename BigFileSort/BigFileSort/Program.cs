@@ -6,7 +6,8 @@ namespace BigFileSort
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var chunksCreator = new ChunksCreator();
+            chunksCreator.SplitFile("input", 30);
         }
     }
 }
