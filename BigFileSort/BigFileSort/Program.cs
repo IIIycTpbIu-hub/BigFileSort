@@ -7,7 +7,7 @@ namespace BigFileSort
         static void Main(string[] args)
         {
             var chunksCreator = new ChunksCreator();
-            chunksCreator.SplitFile("input", 30);
+            chunksCreator.SplitFile("input", 13);
         }
     }
 }
