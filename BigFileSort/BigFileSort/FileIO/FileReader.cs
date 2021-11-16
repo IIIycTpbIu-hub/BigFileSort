@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
-using System.Text;
 
 namespace BigFileSort.FileIO
 {
@@ -10,25 +9,20 @@ namespace BigFileSort.FileIO
     public class FileReader : IEnumerable<string>
     {
         private readonly string _fileName;
-        private readonly int _bufferSize;
 
-        public FileReader(string fileName, int bufferSize)
+        public FileReader(string fileName)
         {
             _fileName = fileName;
-            _bufferSize = bufferSize;
         }
 
         public IEnumerator<string> GetEnumerator()
         {
-            using (var inputStream = File.OpenRead(_fileName))
+            using (StreamReader sr = File.OpenText(_fileName))
             {
-                using (var inputStreamReader = new StreamReader(inputStream, Encoding.UTF8, true, _bufferSize))
+                string s = String.Empty;
+                while ((s = sr.ReadLine()) != null)
                 {
-                    string line;
-                    while ((line = inputStreamReader.ReadLine()) != null)
-                    {
-                        yield return line;
-                    }
+                    yield return s;
                 }
             }
         }
